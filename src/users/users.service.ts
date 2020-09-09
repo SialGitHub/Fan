@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
-
-export type User = any;
+import { RoleEnum, User } from "../interfaces/user.interface";
 
 @Injectable()
 export class UsersService {
@@ -9,16 +8,19 @@ export class UsersService {
   constructor() {
     this.users = [
       {
+        role: RoleEnum.Author,
         userId: 1,
         username: 'john',
         password: 'changeme',
       },
       {
+        role: RoleEnum.Author,
         userId: 2,
         username: 'chris',
         password: 'secret',
       },
       {
+        role: RoleEnum.Author,
         userId: 3,
         username: 'maria',
         password: 'guess',
@@ -28,5 +30,9 @@ export class UsersService {
 
   async findOne(username: string): Promise<User | undefined> {
     return this.users.find(user => user.username === username);
+  }
+
+  async findAll(): Promise<User[]>{
+    return this.users;
   }
 }
