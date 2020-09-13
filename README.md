@@ -1,7 +1,7 @@
 
 ## Description
 
-Clearmove test task
+Blog
 
 ## Running the app
 
@@ -12,7 +12,7 @@ $ sudo pip install docker-compose
 Install Compose on Linux systems: 
 
 ```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
 Clone this repository
