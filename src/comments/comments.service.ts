@@ -3,9 +3,9 @@ import { Injectable } from '@nestjs/common';
 // import { Post } from "../interfaces/post.interface";
 import { PostsService } from "../posts/posts.service";
 // import { Comment } from "../interfaces/comment.interface";
-import { PostEntity } from "../entities/post.entity";
-import { CommentEntity } from "../entities/comment.entity";
-import { UserEntity } from "../entities/user.entity";
+import { PostEntity } from "../posts/post.entity";
+import { CommentEntity } from "./comment.entity";
+import { UserEntity } from "../users/user.entity";
 const uiid = () => {
   return Math.floor(Math.random()*9999999999);
 }

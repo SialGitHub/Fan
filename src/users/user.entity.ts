@@ -1,6 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-import { PostEntity } from "./post.entity";
-import { CommentEntity} from "./comment.entity";
+import { PostEntity } from "../posts/post.entity";
+import { CommentEntity} from "../comments/comment.entity";
 
 export enum RoleEnum{ Admin, Author }
 

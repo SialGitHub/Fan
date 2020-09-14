@@ -15,18 +15,7 @@ import { GraphQLModule } from '@nestjs/graphql';
     PostsModule,
     CommentsModule,
     GraphQLModule.forRoot({}),
-    TypeOrmModule.forRoot(
-      {
-        "type": "postgres",
-        "host": "localhost",
-        "port": 3306,
-        "username": "postgres",
-        "password": "260700",
-        "database": "postgres",
-        "entities": ["dist/**/*.entity{.ts,.js}"],
-        "synchronize": true
-      }
-    )],
+    TypeOrmModule.forRoot()],
   controllers: [AppController],
   providers: [AppService],
 })
