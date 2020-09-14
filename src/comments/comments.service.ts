@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 // import { User } from "../interfaces/user.interface";
-import { Post } from "../interfaces/post.interface";
+// import { Post } from "../interfaces/post.interface";
 import { PostsService } from "../posts/posts.service";
 // import { Comment } from "../interfaces/comment.interface";
 import { PostEntity } from "../entities/post.entity";

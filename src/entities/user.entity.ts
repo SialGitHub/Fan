@@ -7,16 +7,19 @@ export enum RoleEnum{ Admin, Author }
 @Entity()
 export class UserEntity {
   @PrimaryGeneratedColumn()
-  userId: number;
+  userId: number
 
   @Column()
-  name: string;
+  username: string
 
   @Column()
-  email: string;
+  email: string
 
   @Column()
-  role: RoleEnum;
+  password: string
+
+  @Column()
+  role: RoleEnum
 
   @Column()
   posts: PostEntity

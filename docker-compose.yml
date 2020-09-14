@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  main:
+  node:
     container_name: main
     build:
       context: .

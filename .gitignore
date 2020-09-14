@@ -1,3 +1,8 @@
+idea/
+server/build
+client/dist
+dist/
+
 # Logs
 logs
 *.log

@@ -6,6 +6,7 @@ import { UsersModule } from './users/users.module';
 import { PostsModule } from './posts/posts.module';
 import { CommentsModule } from './comments/comments.module';
 import { TypeOrmModule} from "@nestjs/typeorm";
+import { GraphQLModule } from '@nestjs/graphql';
 // import { UserEntity } from "./entities/user.entity";
 
 @Module({
@@ -13,6 +14,7 @@ import { TypeOrmModule} from "@nestjs/typeorm";
     UsersModule,
     PostsModule,
     CommentsModule,
+    GraphQLModule.forRoot({}),
     TypeOrmModule.forRoot(
       {
         "type": "postgres",
