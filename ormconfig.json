@@ -1,10 +1,15 @@
-{
-  "type": "postgresql",
-  "host": "localhost",
-  "port": 3306,
-  "username": "postgres",
-  "password": 260700,
-  "database": "postgres",
-  "entities": ["dist/**/*.entity{.ts,.js}"],
-  "synchronize": true
-}
+[
+  {
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "gill",
+    "password": 260700,
+    "database": "postgres",
+    "entities": ["dist/**/*.entity{ .ts,.js}"],
+    "synchronize": false,
+    "migrations": ["dist/migrations/*{.ts,.js}"],
+    "migrationsTableName": "migrations_typeorm",
+    "migrationsRun": true
+  }
+]

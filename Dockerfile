@@ -1,14 +1,14 @@
 FROM node:14.9.0
 
-RUN apk update
-
-ENV NODE_ENV production
+RUN apt-get update && apt-get install -qq -y \
+    shellcheck \
+  && rm -rf /var/lib/apt/lists/*
 
 ENV PORT 3000
 
 EXPOSE 3000
 
-WORKDIR /home/app-name
+WORKDIR /usr/src/app/
 
 COPY package.json package.json
 
