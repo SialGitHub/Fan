@@ -12,13 +12,13 @@ export class CommentController {
     private commentService:CommentsService
   ) {}
 
-  // create my comment
-  @UseGuards(JwtAuthGuard)
-  @Post('post/create/comment')
-  createComment(@Request() req, @Param("id") id:string,
-                @Body() body: {text:string}) {
-    return this.commentService.createOne(req.user, +id, body.text);
-  }
+  // // create my comment
+  // @UseGuards(JwtAuthGuard)
+  // @Post('post/create/comment')
+  // createComment(@Request() req, @Param("id") id:string,
+  //               @Body() body: {text:string}) {
+  //   return this.commentService.createOne(req.user, +id, body.text);
+  // }
 
   // get all my comments
   @UseGuards(JwtAuthGuard)

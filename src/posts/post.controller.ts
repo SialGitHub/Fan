@@ -14,7 +14,7 @@ export class PostController{
   @UseGuards(JwtAuthGuard)
   @Post('posts/create')
   createPost(@Request() req, @Body() body: {text:string}) {
-    return this.postsService.createPost( req.user, body.text);
+    return this.postsService.createPost( req.user, body.text, );
   }
 
   // get all posts

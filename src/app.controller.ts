@@ -3,8 +3,8 @@ import { Controller, Get, Request, Post,
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { LocalAuthGuard } from './auth/local-auth.guard';
 import { AuthService } from './auth/auth.service';
-import { PostsService } from "./posts/posts.service";
-import { CommentsService } from "./comments/comments.service";
+import { PostsService} from "./posts/posts.service";
+import { CommentsService} from "./comments/comments.service";
 
 @Controller()
 export class AppController {
