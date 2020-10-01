@@ -10,5 +10,4 @@ export class CreatePostDto{
 
   @IsNotEmpty()
   readonly text: string
-
 }
