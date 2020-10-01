@@ -1,7 +1,7 @@
 
 ## Description
 
-Clearmove test task
+Fan service
 
 ## Running the app
 
